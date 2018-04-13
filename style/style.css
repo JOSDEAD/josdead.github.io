@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Yantramanav');
+
+.wrapper{
+    height:calc(100% - 0px) ;
+}
+.navbar{
+    height: auto;
+}
+.home{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    -webkit-box-align: center;
+    width: 100%;
+    height: 100%;
+}
+.content{
+    position: relative;
+    top:10%;
+    transform: translateY(50%);
+    -webkit-box-align: center;
+    text-align: center;
+}
+.canvas{
+    background: #1C1D21;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+html{ 
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+body{ 
+    position: relative;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.content h1{
+    position: relative;
+    font-family: 'Yantramanav',sans-serif;
+    font-size: 380%;
+    font-weight: 100;
+    color:white;
+    margin-bottom: 0%;
+
+}
+.content h2{
+    font-family: 'Yantramanav',sans-serif;
+    font-size: 250%;
+    font-weight: 100;
+    color:white;
+    margin-top:0%; 
+}
+.btn{
+    font-family: 'Montserrat',sans-serif;
+    color: white;
+    font-size: 135%;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid white;
+    padding: 10px 20px;
+    border-radius: 9px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #04C2C9;
+    border-color: #04C2C9;
+    
+}
+.highlight{
+    color: #E31B6D;
+}
+.hero {
+    padding: 20vh 0;
+    background: linear-gradient(to right, #EECDA3, #EF629F);
+  }
+  
+  .features {
+    
+    background: #222;
+    color: white;
+  }
+  
+  .pricing {
+   
+    text-align: center;
+  }
+  
+  .featured-price {
+    transform: scale(1.1);
+    z-index: 10;
+    background: #222;
+  }
+  
+  footer {
+    padding: 10vh 0;
+    text-align: center;
+    background: black;
+    color: white;
+  }
+ul{
+    width: 100%;
+}
