@@ -1,3 +1,4 @@
+//load canvas
 var canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -9,27 +10,28 @@ var mouse = {
     x: undefined,
     y: undefined
 }
+//get mouse coordinates
 canvas.addEventListener('mousemove',
     function (event) {
         mouse.x = event.pageX;
         mouse.y = event.pageY;
 
     });
-
+//resposive canvas, resizible canvas
 window.addEventListener('resize', function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     init();
 
 });
-
+//color array
 var colorArray = [
     '#31353D',
     '#445878',
     '#92CDCF',
     '#EEEFF7'
 ];
-
+//circle object
 function Circle(x, y, sx, sy, radius) {
     this.x = x;
     this.y = y;
@@ -64,7 +66,7 @@ function Circle(x, y, sx, sy, radius) {
         this.draw()
     }
 }
-
+//square object
 function Square(x, y, sx, sy, size) {
     this.x = x;
     this.y = y;
@@ -99,7 +101,7 @@ function Square(x, y, sx, sy, size) {
         this.draw()
     }
 }
-
+//triangule object
 function Triangule(x, y, sx, sy, size) {
     this.x = x;
     this.y = y;
@@ -141,9 +143,9 @@ function Triangule(x, y, sx, sy, size) {
     }
 }
 
-
+//array that will containt the objects, circles,square and triangules
 var objectArray = []
-
+//fill the array with objects
 function init() {
     objectArray = [];
     for (var i = 0; i < 1000; i++) {
@@ -166,7 +168,7 @@ function init() {
 
 
 init();
-
+//animate the objects
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, innerWidth, innerHeight);

@@ -1,3 +1,4 @@
+//filter gallery's images
 $('.portfolio-item').isotope({
 	itemSelector: '.item',
 	masonry: {
@@ -5,7 +6,7 @@ $('.portfolio-item').isotope({
 		isFitWidth: true
 	}
 });
-
+//active animation from gallery menu
 $('.portfolio-menu ul li').click(function () {
 	$('.portfolio-menu ul li').removeClass('active');
 	$(this).addClass('active');

@@ -1,10 +1,12 @@
 $(function () {
+    //init animations with scroll
     new WOW().init();
+    //init image's hover effects
     $('.portfolio-item').sliphover({
         target: '.item img',
         caption: 'data-caption'
     });
-    // NAV POSITION
+    // Following nav bar
     var navPos = 960;
     var lastPos = 0;
     var lockTimer
