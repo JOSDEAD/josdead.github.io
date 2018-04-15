@@ -1,15 +1,20 @@
 $(function () {
+    new WOW().init();
+    $('.portfolio-item').sliphover({
+        target: '.item img',
+        caption: 'data-caption'
+    });
     // NAV POSITION
-    var navPos = $('nav').position().top;
+    var navPos = 960;
     var lastPos = 0;
     var lockTimer
-
+    console.log("gffdg");
     $(window).on('scroll', function () {
 
             var pos = $(window).scrollTop();
-            var pos2 = pos + 50;
-            var scrollBottom = pos + $(window).height();
 
+            var pos2 = pos + 100;
+            var scrollBottom = pos + $(window).height();
             if (pos >= navPos + $('nav').height() && lastPos < pos) {
                 $('nav').addClass('animated fadeInDown');
                 $('nav').addClass('fixed-top');

@@ -9,9 +9,11 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="scripts/index.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"></script>
+  <link href="style/flaticon.css" rel="stylesheet">
   <link href="style/style.css" rel="stylesheet">
   <link href="style/animate.css" rel="stylesheet" />
+
 
 
 </head>
@@ -19,14 +21,14 @@
 <body>
   <div id="fullscreen" class="wrapper">
     <section class="home">
-      <div class="content">
-        <section class="animated bounceInUp">
+      <div class="content wow animated bounceInUp">
+        <section>
           <h1>Hello, I'm
             <span class="highlight">Jose Miguel</span>.</h1>
-          <h2>I'm a software deaveloper.</h2>
+          <h2>I'm a software developer.</h2>
         </section>
-        <section class="animated bounceInUp">
-          <a class="btn" href="#">Get Started</a>
+        <section>
+          <a class="btn" href="#ABOUT">Get Started</a>
         </section>
       </div>
 
@@ -44,83 +46,224 @@
           <a class="nav-link scroll" href="#top">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scroll" href="#">ABOUT</a>
+          <a class="nav-link scroll" href="#ABOUT">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scroll" href="#">PORTFOLIO</a>
+          <a class="nav-link scroll" href="#PORTFOLIO">PORTFOLIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link scroll" href="#">CONTACT</a>
+          <a class="nav-link scroll" href="#CONTACT">CONTACT</a>
         </li>
       </ul>
     </div>
   </nav>
-  <section id="ABOUT">
-    <div class="titulo">
-      <h2>ABOUT</h2>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm-3">
-        <div class="container">
-          <div id="hexagon">
-            <span class="glyphicon glyphicon-sunglasses"></span>
+  <section id="ABOUT" class="fullscreen">
+    <div class="wrap flex">
+      <div class="titulo">
+        <h2 class="wow flipInX" data-wow-delay="0.5s">ABOUT</h2>
+      </div>
+      <div id="abilities" class="abilities">
+        <div class="container1">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 wow bounceIn" data-wow-delay="1.75s">
+              <i class="flaticon-teamwork" aria-hidden="true"></i>
+              <h4>Team Work</h4>
+              <p>I enjoy working with teams, I like to share ideas and learn from others.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 wow bounceIn" data-wow-delay="1.50s">
+              <i class="flaticon-light-bulb" aria-hidden="true"></i>
+              <h4>Creativity</h4>
+              <p>I'm a person with a huge imagination, I love to make ideas reality.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 wow bounceIn" data-wow-delay="1.25s">
+              <i class="flaticon-adaptation" aria-hidden="true"></i>
+              <h4>Adaptive</h4>
+              <p>I'm an adaptive person, who is always for the looking of new challenges.</p>
+            </div>
+            <div class="col-lg-3 col-md-3 wow bounceIn" data-wow-delay="1s">
+              <i class="flaticon-business-deal" aria-hidden="true"></i>
+              <h4>Responsible</h4>
+              <p>Always trying to finish my responsibilities.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-3 ">
-        <div class="container"></div>
-      </div>
-      <div class="col-sm-3 ">
-        <div class="container"></div>
-      </div>
-      <div class="col-sm-3 ">
-        <div class="container"></div>
+      <div class="row justify-content-center">
+        <div class="col-sm-5 aboutC wow bounceInLeft" data-wow-delay="0.5s">
+          <img src="IMG/jose.jpg" class="img-responsive profilePic">
+          <h3>Who's this guy?</h3>
+          <p>I'm a computer computer engineering always willing to learn new things, and enjoy myself developing software while
+            getting new skills.</p>
+        </div>
+        <div class="col-sm-6 wow bounceInRight" data-wow-delay="0.5s">
+          <div class="skillbar clearfix " data-percent="90%">
+            <div class="skillbar-title">
+              <span>Python</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">90%</div>
+          </div>
+
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title">
+              <span>C#</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div>
+
+          <div class="skillbar clearfix " data-percent="50%">
+            <div class="skillbar-title">
+              <span>JavaScript</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">50%</div>
+          </div>
+
+          <div class="skillbar clearfix " data-percent="60%">
+            <div class="skillbar-title">
+              <span>Java</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">60%</div>
+          </div>
+
+          <div class="skillbar clearfix " data-percent="50%">
+            <div class="skillbar-title">
+              <span>Angular</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">50%</div>
+          </div>
+
+          <div class="skillbar clearfix " data-percent="40%">
+            <div class="skillbar-title">
+              <span>Node.js</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">40%</div>
+          </div>
+
+          <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar-title">
+              <span>Unity</span>
+            </div>
+            <div class="skillbar-bar"></div>
+            <div class="skill-bar-percent">70%</div>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-sm-5">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-          eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-          eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-          pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
-          leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
-          a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi
-          vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
-          rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
-          hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-          Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-
-        </p>
+  </section>
+  <section id="PORTFOLIO" class="fullscreen">
+    <div class="wrap flex">
+      <div class="titulo wow flipInX" data-wow-delay="0.5s">
+        <h2>PORTFOLIO</h2>
       </div>
-      <div class="col-sm-5 ">
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-          eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
-          eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-          pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean
-          leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat
-          a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi
-          vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
-          rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
-          hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-          Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
 
-        </p>
+      <div class="gallery">
+        <div class="portfolio-menu wow bounceInDown " data-wow-delay="0.5s">
+          <ul>
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".web">Webdesign</li>
+            <li data-filter=".unity">Unity</li>
+            <li data-filter=".python">Python</li>
+            <li data-filter=".java">Java</li>
+          </ul>
+        </div>
+        <div class="portfolio-item">
+          <div id="prueba" class="item unity wow fadeInUpBig" data-wow-delay="0.5s">
+            <img src="IMG/tegobiProject.jpeg" width="354" height="262" class="img-responsive" data-caption="<h3>Tegobi</h3><hr/>Is a game developed in unity where you are a moustache in a world infected by razors."
+              alt="">
+          </div>
+          <div class="item python wow fadeInUpBig" data-wow-delay="0.75s">
+            <img src="IMG/chatProject.jpg" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Chat</h3><hr/>Chat server and client using socket in python, where clients can chat with each other and make petitions such as the time anywhere in the globe.<a href=https://github.com/JOSDEAD/Chat-Sockets>   Github</a>">
+          </div>
+          <div class="item java wow fadeInUpBig" data-wow-delay="1s">
+            <img src="IMG/bombermanProject.jpeg" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Bomberman</h3><hr/>Game replica of bomberman, developed in java using object oriented programming">
+          </div>
+          <div class="item web wow fadeInUpBig " data-wow-delay="1.25s">
+            <img src="IMG/inventoryProject.JPG" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Restaurant inventory</h3><hr/>I was part of the team who developed the inventory system for my university's restaurant, to keep track of every products purchase and existence. NodeJS was used for backend and Angular 1.6 for the frontend.">
+          </div>
+          <div class="item web wow fadeInUpBig " data-wow-delay="1.5s">
+            <img src="IMG/conenct4Project.png" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Connect 4</h3><hr/> A game of connect 4 developed with ASP.NET MVC framework, where you could play against other players or vs the IA, the web aplication also includes login with facebook and google, user profiles, game lobbies with chats, and also an leaderboard using the ELO algorithm.">
+          </div>
+          <div class="item web wow fadeInUpBig" data-wow-delay="1.75s">
+            <img src="IMG/hostipalProject.JPG" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Overtime work tracker for Hospital San Carlos </h3><hr/>Currently part of the team that is developing the overtime work tracker for the  Hospital San Carlos">
+          </div>
+        </div>
       </div>
 
     </div>
   </section>
-  <section>
+  <section id="CONTACT" class="fullscreen">
 
-
+    <div class="wrap flex">
+      <div class="titulo">
+        <h2 class="wow zoomIn " data-wow-delay="0.5s">CONTACT</h2>
+      </div>
+      <p class="wow zoomIn " data-wow-delay="0.5s">If you have any question you can contact me.</p>
+      <form id="contact-form " class="wow rollIn" data-wow-delay="0.5s">
+        <input placeholder="Name" type="text" name="name" required="">
+        <input placeholder="Enter email" type="email" name="email" required="">
+        <textarea placeholder="Your Message" type="text" name="message"></textarea>
+        <input class="button" type="submit" id="submit" value="SUBMIT">
+      </form>
 
 
   </section>
   <footer>
+    <div class="wrap flex">
+      <div class="row justify-content-between">
+        <div class="col-sm-5">
+          <div class="d-flex flex-column justify-content-start">
+            <div class="p-2">
+              <i class="fas fa-map fa-2x "></i>
+              <p class="iconMargin">
+                <span>Currenly in </span> Guanacaste, Costa Rica</p>
+            </div>
+            <div class="p-2">
+              <i class="fas fa-phone fa-2x"></i>
+              <p class="iconMargin">+506 89116453</p>
+            </div>
+            <div class="p-2">
+              <i class="far fa-envelope fa-2x"></i>
+              <a href="mailto:josemiguelmurillorodriguez@gmail.com" class="iconMargin">josemiguelmurillorodriguez@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 social">
+          <div class="d-flex flex-column justify-content-start">
+            <div class="p-2">
+              <a href="https://www.github.com/JOSDEAD">
+                <i class="fab fa-github-square fa-3x"></i>
+              </a>
+
+            </div>
+            <div class="p-2">
+              <a href="https://www.facebook.com/JOSDEAD">
+
+                <i class="fab fa-facebook-square fa-3x"></i>
+              </a>
+              </i>
+            </div>
+            <div class="p-2">
+              <a href="https://www.instagram.com/josdead25">
+                <i class="fab fa-instagram fa-3x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="scripts/canvas.js"></script>
+    <script src="scripts/fillingBar.js"></script>
+    <script src="scripts/isotope.pkgd.min.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/jquery.sliphover.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <script src="scripts/index.js"></script>
   </footer>
 </body>
 
