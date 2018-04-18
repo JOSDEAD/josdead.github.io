@@ -11,7 +11,7 @@ var mouse = {
     y: undefined
 }
 //get mouse coordinates
-canvas.addEventListener('mousemove',
+window.addEventListener('mousemove',
     function (event) {
         mouse.x = event.pageX;
         mouse.y = event.pageY;

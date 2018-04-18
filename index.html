@@ -21,45 +21,46 @@
 <body>
   <header>
     <!--Home-->
-    <div id="fullscreen" class="wrapper">
-      <section class="home">
-        <div class="content wow animated bounceInUp">
-          <section>
-            <h1>Hello, I'm
-              <span class="highlight">Jose Miguel</span>.</h1>
-            <h2>I'm a software developer.</h2>
-          </section>
-          <section>
-            <a class="btn" href="#ABOUT">Get Started</a>
-          </section>
-        </div>
-
-      </section>
+    <section id="home" class="wrapper flexn">
       <div class="canvas">
-        <canvas></canvas>
+          <canvas></canvas>
       </div>
-
-    </div>
+      <div id="title" class="flex">
+          <div class="content wow animated bounceInUp">
+              <section>
+                <h1>Hello, I'm
+                  <span class="highlight">Jose Miguel</span>.</h1>
+                <h2>I'm a software developer.</h2>
+              </section>
+              <section>
+                <a class="btn" href="#ABOUT">Get Started</a>
+              </section>
+            </div>
+      </div>
+    </section>
   </header>
   <!--Nav bar-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="nav justify-content-center">
-        <li class="nav-item active">
-          <a class="nav-link scroll" href="#top">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#ABOUT">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#PORTFOLIO">PORTFOLIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#CONTACT">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+           
+                <a class="nav-link scroll" href="#home">HOME</a>
+             
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#ABOUT">ABOUT</a>
+              
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#PORTFOLIO">PORTFOLIO</a>
+          
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#CONTACT">CONTACT</a>
+         
+        </div>
+      </div>
+    </nav>
   <!--About-->
   <section id="ABOUT" class="fullscreen">
     <div class="wrap flex">
@@ -181,24 +182,82 @@
           </ul>
         </div>
         <div class="portfolio-item">
-          <div id="prueba" class="item unity wow fadeInUpBig" data-wow-delay="0s">
-            <img src="IMG/tegobiProject.jpeg" width="354" height="262" class="img-responsive" data-caption="<h3>Tegobi</h3><hr/>Is a game developed in unity where you are a moustache in a world infected by razors."
-              alt="">
+          <div id="container"  class="item unity wow fadeInUpBig" data-wow-delay="0s">
+            <img src="IMG/tegobiProject.jpeg" width="354" height="262" class="img-responsive" alt="">
+              <div class="overlay">
+                  <div class="overlayTitle">
+                      Tegobi
+                      <hr>
+                  </div>
+              
+                <div class="overlayText">
+                    Is a game developed in unity where you are a moustache in a world infected by razors.
+                </div>
+              </div>
           </div>
-          <div class="item python wow fadeInUpBig" data-wow-delay="0.25s">
-            <img src="IMG/chatProject.jpg" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Chat</h3><hr/>Chat server and client using socket in python, where clients can chat with each other and make petitions such as the time anywhere in the globe.<a href=https://github.com/JOSDEAD/Chat-Sockets>   Github</a>">
+          <div id="container" class="item python wow fadeInUpBig" data-wow-delay="0.25s">
+            <img src="IMG/chatProject.jpg" width="354" height="262" class="img-responsive" alt="">
+            <div class="overlay">
+                <div class="overlayTitle">
+                    Chat
+                    <hr>
+                </div>
+            
+              <div class="overlayText">
+                  Chat server and client using socket in python, where clients can chat with each other and make petitions such as the time anywhere in the globe.<a href=https://github.com/JOSDEAD/Chat-Sockets>   Github</a>
+              </div>
+            </div>
           </div>
-          <div class="item java wow fadeInUpBig" data-wow-delay="0.5s">
-            <img src="IMG/bombermanProject.jpeg" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Bomberman</h3><hr/>Game replica of bomberman, developed in java using object oriented programming">
+          <div id="container" class="item java wow fadeInUpBig" data-wow-delay="0.5s">
+            <img src="IMG/bombermanProject.jpeg" width="354" height="262" class="img-responsive" alt="">
+            <div class="overlay">
+                <div class="overlayTitle">
+                    Bomberman
+                    <hr>
+                </div>
+            
+              <div class="overlayText">
+                  Game replica of bomberman, developed in java using object oriented programming.
+              </div>
+            </div>
           </div>
-          <div class="item web wow fadeInUpBig " data-wow-delay="0.75s">
-            <img src="IMG/inventoryProject.JPG" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Restaurant inventory</h3><hr/>I was part of the team who developed the inventory system for my university's restaurant, to keep track of every products purchase and existence. NodeJS was used for backend and Angular 1.6 for the frontend.">
+          <div id="container" class="item web wow fadeInUpBig " data-wow-delay="0.75s">
+            <img src="IMG/inventoryProject.JPG" width="354" height="262" class="img-responsive" alt="" >
+            <div class="overlay">
+                <div class="overlayTitle">
+                    Restaurant inventory
+                    <hr>
+                </div>
+            
+              <div class="overlayText">
+                  I was part of the team who developed the inventory system for my university's restaurant, to keep track of every products purchase and existence.
+              </div>
+            </div>
           </div>
-          <div class="item web wow fadeInUpBig " data-wow-delay="1s">
-            <img src="IMG/conenct4Project.png" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Connect 4</h3><hr/> A game of connect 4 developed with ASP.NET MVC framework, where you could play against other players or vs the IA, the web aplication also includes login with facebook and google, user profiles, game lobbies with chats, and also an leaderboard using the ELO algorithm.">
+          <div  id="container" class="item web wow fadeInUpBig " data-wow-delay="1s">
+            <img src="IMG/conenct4Project.png" width="354" height="262" class="img-responsive" alt="" >
+            <div class="overlay">
+            <div class="overlayTitle">
+                Connect 4
+                <hr>
+            </div>
+        
+          <div class="overlayText">
+              A game of connect 4 developed with ASP.NET MVC framework, where you could play against other players or vs the IA, the web aplication also includes login with facebook and google.
           </div>
-          <div class="item web wow fadeInUpBig" data-wow-delay="1.25s">
-            <img src="IMG/hostipalProject.JPG" width="354" height="262" class="img-responsive" alt="" data-caption="<h3>Overtime work tracker for Hospital San Carlos </h3><hr/>Currently part of the team that is developing the overtime work tracker for the  Hospital San Carlos">
+        </div>
+          </div>
+          <div  id="container" class="item web wow fadeInUpBig" data-wow-delay="1.25s">
+            <img src="IMG/hostipalProject.JPG" width="354" height="262" class="img-responsive" alt="">
+            <div class="overlay">
+            <div class="overlayTitle">
+                Overtime work tracker for Hospital San Carlos 
+                <hr>
+            </div>
+        
+          <div class="overlayText">
+              Currently part of the team that is developing the overtime work tracker for the  Hospital San Carlos.
+          </div>
           </div>
         </div>
       </div>
@@ -275,8 +334,6 @@
     <script src="scripts/isotope.pkgd.min.js"></script>
     <!--Load load gallery filters-->
     <script src="scripts/portfolio.js"></script>
-    <!--hover effects for the gallery-->
-    <script src="scripts/jquery.sliphover.min.js"></script>
     <!--Animations with scroll-->
     <script src="scripts/wow.min.js"></script>
     <!--Following nav bar and load animations-->
